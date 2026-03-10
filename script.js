@@ -804,7 +804,6 @@ const questionScreen = document.getElementById("question-screen");
 const resultScreen = document.getElementById("result-screen");
 
 const startBtn = document.getElementById("start-btn");
-const shuffleBtn = document.getElementById("shuffle-btn");
 const restartBtn = document.getElementById("restart-btn");
 
 const questionText = document.getElementById("question-text");
@@ -822,20 +821,12 @@ const nextBtn = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 let canClick = true;
-let isRandomMode = false;
 
 // Store original questions order
 const originalQuestions = [...questions];
 
 // Event Listeners
-startBtn.addEventListener("click", () => {
-  isRandomMode = false;
-  startGame();
-});
-shuffleBtn.addEventListener("click", () => {
-  isRandomMode = true;
-  startGame();
-});
+startBtn.addEventListener("click", startGame);
 restartBtn.addEventListener("click", resetGame);
 nextBtn.addEventListener("click", handleNextQuestion);
 
@@ -846,10 +837,8 @@ function startGame() {
   // Restore original order
   questions.splice(0, questions.length, ...originalQuestions);
 
-  // Shuffle if in random mode
-  if (isRandomMode) {
-    questions.sort(() => Math.random() - 0.5);
-  }
+  // Always shuffle
+  questions.sort(() => Math.random() - 0.5);
 
   showScreen(questionScreen);
   loadQuestion();
