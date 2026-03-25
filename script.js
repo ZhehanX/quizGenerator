@@ -219,6 +219,8 @@ const resultScreen = document.getElementById("result-screen");
 
 const startBtn = document.getElementById("start-btn");
 const restartBtn = document.getElementById("restart-btn");
+const backToStartBtn = document.getElementById("back-to-start-btn");
+const backToTopicsBtn = document.getElementById("back-to-topics-btn");
 
 const questionText = document.getElementById("question-text");
 const optionsGrid = document.getElementById("options-grid");
@@ -452,10 +454,28 @@ function showResult() {
 }
 
 // ============================================================
+// BACK BUTTONS LOGIC
+// ============================================================
+function goBackToStart() {
+  showScreen(startScreen);
+}
+
+function goBackToTopics() {
+  if (currentQuestionIndex > 0 && currentQuestionIndex < questions.length - 1) {
+    if (!confirm("¿Seguro que quieres salir? Perderás tu progreso actual.")) {
+      return;
+    }
+  }
+  showTopicSelection();
+}
+
+// ============================================================
 // EVENT LISTENERS
 // ============================================================
 startBtn.addEventListener("click", showTopicSelection);
 restartBtn.addEventListener("click", resetGame);
+backToStartBtn.addEventListener("click", goBackToStart);
+backToTopicsBtn.addEventListener("click", goBackToTopics);
 nextBtn.addEventListener("click", handleNextQuestion);
 retryBtn.addEventListener("click", () => {
   cachedTopics = null;
