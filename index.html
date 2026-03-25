@@ -19,6 +19,22 @@
         <button id="start-btn" class="primary-btn">Empezar Test</button>
       </div>
 
+      <!-- Topic Selection Screen -->
+      <div id="topic-screen" class="screen">
+        <h1 class="topic-title">Selecciona un Tema</h1>
+        <div id="topic-list" class="topic-list">
+          <!-- Topics will be injected by script.js -->
+        </div>
+        <div id="loading-indicator" class="loading-indicator hidden">
+          <div class="spinner"></div>
+          <p>Cargando preguntas...</p>
+        </div>
+        <div id="error-container" class="error-container hidden">
+          <p id="error-message" class="error-text"></p>
+          <button id="retry-btn" class="secondary-btn">Reintentar</button>
+        </div>
+      </div>
+
       <!-- Question Screen -->
       <div id="question-screen" class="screen">
         <div class="progress-container">

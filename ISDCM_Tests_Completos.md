@@ -7,33 +7,27 @@
 
 ## Índice
 
-1. [Tests Verdadero/Falso](#1-tests-verdaderofalso)
-   - 1.1 [Estandarización](#11-estandarización)
-   - 1.2 [Ciclo de Vida](#12-ciclo-de-vida)
-   - 1.3 [Caracteres Unicode](#13-caracteres-unicode)
-   - 1.4 [Audio](#14-audio)
-   - 1.5 [Imágenes](#15-imágenes)
-   - 1.6 [Vídeo](#16-vídeo)
-   - 1.7 [Contenedores](#17-contenedores)
-   - 1.8 [Metadatos](#18-metadatos)
-   - 1.9 [Modelo OSI](#19-modelo-osi)
-   - 1.10 [MIME](#110-mime)
-   - 1.11 [URL](#111-url)
-   - 1.12 [HTTP](#112-http)
-   - 1.13 [XML](#113-xml)
-   - 1.14 [Servicios Web](#114-servicios-web)
-   - 1.15 [HTML5 y Streaming](#115-html5-y-streaming)
-   - 1.16 [DASH](#116-dash)
-   - 1.17 [Seguridad](#117-seguridad)
-2. [Problemas Resueltos](#2-problemas-resueltos)
-3. [Exámenes Parciales](#3-exámenes-parciales)
-4. [Exámenes Semanales](#4-exámenes-semanales)
+1. [Estandarización](#1-estandarización)
+2. [Ciclo de Vida](#2-ciclo-de-vida)
+3. [Caracteres Unicode](#3-caracteres-unicode)
+4. [Audio](#4-audio)
+5. [Imágenes](#5-imágenes)
+6. [Vídeo](#6-vídeo)
+7. [Contenedores](#7-contenedores)
+8. [Metadatos](#8-metadatos)
+9. [Modelo OSI](#9-modelo-osi)
+10. [MIME](#10-mime)
+11. [URL](#11-url)
+12. [HTTP](#12-http)
+13. [XML](#13-xml)
+14. [Servicios Web](#14-servicios-web)
+15. [HTML5 y Streaming](#15-html5-y-streaming)
+16. [DASH](#16-dash)
+17. [Seguridad](#17-seguridad)
 
 ---
 
-## 1. Tests Verdadero/Falso
-
-### 1.1 Estandarización
+### 1. Estandarización
 
 **Pregunta 1:** ISO es una SDO (Standards Development Organization), mientras que IEEE no lo es.
 - [ ] Verdadero
@@ -100,18 +94,30 @@
 - [ ] Falso
 > **Respuesta:** Falso.
 
+**Pregunta 14:** ISO es una SDO (Standards Development Organization), mientras que IEEE no lo es.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Ambas son SDOs.
+
+
 ---
 
-### 1.2 Ciclo de Vida
+### 2. Ciclo de Vida
 
 **Pregunta 1:** Creación y Almacenamiento son los primeros pasos del ciclo de vida de los contenidos multimedia.
 - [ ] Verdadero
 - [ ] Falso
 > **Respuesta:** Verdadero.
 
+**Pregunta 2:** "Creation" y "Storage" son los primeros pasos del ciclo de vida de los contenidos multimedia.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Verdadero.
+
+
 ---
 
-### 1.3 Caracteres Unicode
+### 3. Caracteres Unicode
 
 **Pregunta 1:** Una Code Unit es un número único asignado a cada carácter Unicode.
 - [ ] Verdadero
@@ -173,9 +179,20 @@
 - [ ] Falso
 > **Respuesta:** Falso. 4 octetos es el máximo. No hay Code Points que necesiten más de 20 bits.
 
+**Pregunta 13:** El carácter Unicode cuyo "Code Point" es 100 (en Decimal) necesita 2 "Code Units" al codificarse en "UTF-16".
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Necesita solo una code unit de 16 bits.
+
+**Pregunta 14:** Un "Code Unit" es un número único asignado a cada carácter Unicode.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Esto es un Code Point.
+
+
 ---
 
-### 1.4 Audio
+### 4. Audio
 
 **Pregunta 1:** El formato de audio MP3 está especificado en una parte de un estándar ISO/IEC.
 - [ ] Verdadero
@@ -192,9 +209,20 @@
 - [ ] Falso
 > **Respuesta:** Verdadero.
 
+**Pregunta 4:** Advanced Audio Coding (AAC) y Vorbis son ejemplos de estándares "open-source" que compiten con MP3.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. AAC no es open-source y es una evolución de MP3.
+
+**Pregunta 5:** Vorbis es un formato de audio open source.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Verdadero.
+
+
 ---
 
-### 1.5 Imágenes
+### 5. Imágenes
 
 **Pregunta 1:** CGM es un estándar ISO para gráficos vectoriales.
 - [ ] Verdadero
@@ -251,9 +279,30 @@
 - [ ] Falso
 > **Respuesta:** Verdadero.
 
+**Pregunta 12:** El formato de imágenes AVIF es el único caso en el que la representación de la imagen se basa en un mecanismo de compresión de vídeo.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Hay otros. Es una tendencia actual.
+
+**Pregunta 13:** Los formatos de gráficos vectoriales se basan en el uso de objetos geométricos para definir imágenes.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Verdadero.
+
+**Pregunta 14:** SVG (Scalable Vector Graphics) es un formato de gráficos basado en XML que permite diversas resoluciones en las imágenes.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Es para gráficos vectoriales, los cuales no tienen resolución.
+
+**Pregunta 15:** HEIF (High Efficiency Image File Format) es un formato de imagen basado en un estándar de vídeo.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Verdadero. Es el Image File Format de HEVC (High Efficiency Video Coding), es decir MPEG-H parte 12.
+
+
 ---
 
-### 1.6 Vídeo
+### 6. Vídeo
 
 **Pregunta 1:** MPEG-4 AVC y H.264 están alineados, pero tienen algunas pequeñas diferencias técnicas.
 - [ ] Verdadero
@@ -307,7 +356,7 @@
 
 ---
 
-### 1.7 Contenedores
+### 7. Contenedores
 
 **Pregunta 1:** WAV es un conjunto de metadatos específico para audio.
 - [ ] Verdadero
@@ -381,7 +430,7 @@
 
 ---
 
-### 1.8 Metadatos
+### 8. Metadatos
 
 **Pregunta 1:** La descripción del contenido audiovisual debe estar incrustada en el propio contenido.
 - [ ] Verdadero
@@ -458,9 +507,15 @@
 - [ ] Falso
 > **Respuesta:** Verdadero. EBUCore es un superconjunto de Dublin Core.
 
+**Pregunta 16:** "JPSearch core metadata" es un estándar de ISO.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Verdadero.
+
+
 ---
 
-### 1.9 Modelo OSI
+### 9. Modelo OSI
 
 **Pregunta 1:** Los modelos OSI e Internet son iguales. La única diferencia es que ambos usan nombres diferentes.
 - [ ] Verdadero
@@ -487,9 +542,15 @@
 - [ ] Falso
 > **Respuesta:** Verdadero.
 
+**Pregunta 6:** Una data unit de TCP (un segmento TCP) no incluye información del nivel de aplicación.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Incluye información de todos sus niveles superiores.
+
+
 ---
 
-### 1.10 MIME
+### 10. MIME
 
 **Pregunta 1:** MIME fue propuesto inicialmente como la solución a varias limitaciones del formato de correo electrónico, como combinar varios tipos de contenido en el mismo mensaje.
 - [ ] Verdadero
@@ -571,9 +632,30 @@
 - [ ] Falso
 > **Respuesta:** Verdadero.
 
+**Pregunta 17:** Reply-To e In-Reply-To son operaciones de un protocolo de transferencia de mensajes en Internet.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Son elementos (campos) de la cabecera de un mensaje.
+
+**Pregunta 18:** MIME define, aparte de otras características, cómo combinar diferentes tipos de contenido en el mismo mensaje.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Verdadero. Aunque la característica más importante es la posibilidad de codificar contenido "multimedia" de forma legible y, por tanto, compatible con sistemas ASCII.
+
+**Pregunta 19:** Más de la mitad de los subtypes en MIME pertenecen a los content types audio, image y video.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. La mayoría de los subtipos pertenecen al content type application.
+
+**Pregunta 20:** base64 es ineficiente porque necesita transmitir 1 octeto extra por cada octeto original.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. El tamaño aumenta porque necesitamos 4 bytes por cada 3.
+
+
 ---
 
-### 1.11 URL
+### 11. URL
 
 **Pregunta 1:** http://urn:example:animal:ferret:nose es un ejemplo válido de URL.
 - [ ] Verdadero
@@ -615,9 +697,15 @@
 - [ ] Falso
 > **Respuesta:** Verdadero. Un IRI es una URI que puede incluir caracteres no ASCII.
 
+**Pregunta 9:** Tanto una URL como una URN se pueden usar para localizar un recurso que se quiere acceder con HTTP.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Solo una URL.
+
+
 ---
 
-### 1.12 HTTP
+### 12. HTTP
 
 **Pregunta 1:** HTTP no es un protocolo de tipo Petición-Respuesta.
 - [ ] Verdadero
@@ -840,9 +928,35 @@ Accept-Language: en-us
 - [ ] Falso
 > **Respuesta:** Falso. No hay nuevos métodos.
 
+**Pregunta 42:** La "HTTP Request Line" correspondiente a esta respuesta acaba con "HTTP/1.1".
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Verdadero.
+
+**Pregunta 43:** El "status code" de la respuesta corresponde con el mensaje "Moved Permanently".
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. El código de estado es "200", que indica que el recurso ha sido enviado correctamente.
+
+**Pregunta 44:** Una de las ventajas de HTTP/2 es que añade nuevos métodos a los ya existentes en HTTP/1.1.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. No añade nuevos métodos.
+
+**Pregunta 45:** En un HTTP header, un Entity Tag proporciona una marca de tiempo.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Un Entity Tag es un hash de un recurso identificado por una URL.
+
+**Pregunta 46:** El problema de HTTP/2 para las aplicaciones que lo quieren utilizar es su falta de compatibilidad ("backwards compatibility") con HTTP/1.1.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Son compatibles.
+
+
 ---
 
-### 1.13 XML
+### 13. XML
 
 **Pregunta 1:** Las etiquetas XML solo pueden ser definidas por SDOs (Standards Development Organizations).
 - [ ] Verdadero
@@ -998,9 +1112,42 @@ Accept-Language: en-us
 - [ ] Falso
 > **Respuesta:** Falso. Es un estándar IETF.
 
+**Pregunta 20:** "USD" va entre comillas por tratarse del valor de un atributo.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Verdadero.
+
+**Pregunta 21:** "Name" es el "root element" del documento XML por ser el primero de los elementos en "PaymentInfo".
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. El elemento raíz es "PaymentInfo".
+
+**Pregunta 22:** El siguiente fragmento de documento XML incluye un elemento raíz, atributos y texto, pero no otros elementos.
+```xml
+<book>
+  <title lang="en">XML</title>
+  <author>John Smith</author>
+  <year>2018</year>
+</book>
+```
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. "title", "author" y "year" son elementos.
+
+**Pregunta 23:** JSON (JavaScript Object Notation) es un formato de intercambio de datos estandarizado por el W3C (World Wide Web Consortium).
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Es un estándar IETF.
+
+**Pregunta 24:** Los tags de XML sólo pueden ser definidos por SDOs (Standards Development Organizations).
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. Cada diseñador de un esquema XML puede hacerlo.
+
+
 ---
 
-### 1.14 Servicios Web
+### 14. Servicios Web
 
 **Pregunta 1:** La única diferencia entre las versiones 1.1 y 2.0 de WSDL es el nombre: Web Services Description Language (para 2.0) y Web Services Definition Language (para 1.1).
 - [ ] Verdadero
@@ -1072,9 +1219,25 @@ Accept-Language: en-us
 - [ ] Falso
 > **Respuesta:** Verdadero.
 
+**Pregunta 15:** Un proveedor de servicios web utiliza WSDL para permitir que otros puedan implementar clientes que remotamente accedan a ese servicio.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Verdadero.
+
+**Pregunta 16:** En REST, solo se pueden usar los métodos HTTP GET y POST.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Falso. También PUT o DELETE podrían usarse.
+
+**Pregunta 17:** Aunque usemos REST para implementar un servicio web, podríamos usar SOAP para devolver las respuestas.
+- [ ] Verdadero
+- [ ] Falso
+> **Respuesta:** Verdadero.
+
+
 ---
 
-### 1.15 HTML5 y Streaming
+### 15. HTML5 y Streaming
 
 **Pregunta 1:** Aparte de otras características, HTML5 añade nuevas etiquetas respecto a HTML4 para gestionar nativamente contenido de vídeo.
 - [ ] Verdadero
@@ -1168,7 +1331,7 @@ Accept-Language: en-us
 
 ---
 
-### 1.16 DASH
+### 16. DASH
 
 **Pregunta 1:** Aunque MPEG-DASH es mejor, es posible tener streaming multimedia adaptativo con RTSP.
 - [ ] Verdadero
@@ -1222,7 +1385,7 @@ Accept-Language: en-us
 
 ---
 
-### 1.17 Seguridad
+### 17. Seguridad
 
 **Pregunta 1:** En el mecanismo ElGamal para encriptación asimétrica, la clave secreta es simplemente un número seleccionado dentro de un rango G dado.
 - [ ] Verdadero
@@ -1309,244 +1472,16 @@ Accept-Language: en-us
 - [ ] Falso
 > **Respuesta:** Falso. Los derechos morales no pueden transferirse, por lo que la "exclusividad" no aplica.
 
----
-
-## 2. Problemas Resueltos
-
-### Problema 1: Estandarización MPEG
-
-**Enunciado:** En el anexo tenemos un fragmento de la nota de prensa de la reunión de ISO/IEC JTC1 SC29/WG11 de agosto de 2013.
-
-**Preguntas:**
-
-1. Respecto al ítem 1, sabiendo que "Type 1 licensing terms" es equivalente a "royalty-free": ¿De quién puede ser la contribución a que se refiere la nota? ¿En qué estándar está basada?
-
-> **Respuesta:** Google dispone de un formato de vídeo sin patentes, VP8, que ha contribuido a MPEG para producir un nuevo estándar.
-
-2. Asumiendo que se cumplen las fechas que están barajando, ¿en qué periodo de tiempo se produciría el DIS (Draft International Standard)?
-
-> **Respuesta:** El DIS es el paso previo a FDIS y posterior a CD. Por tanto tendrá que ser entre Noviembre de 2013 y Julio de 2014.
-
-3. ¿Qué es el ISO Base Media File Format?
-
-> **Respuesta:** Un estándar de contenedor inicialmente desarrollado para vídeo. Es parte de MPEG-4.
-
-4. ¿Qué es un FDIS?
-
-> **Respuesta:** Un estándar prácticamente definitivo que ya no admite cambios técnicos y está pendiente de su aprobación final.
-
----
-
-### Problema 2: Codificación Unicode
-
-**Enunciado:** Dado el Unicode Character 'CUNEIFORM SIGN PI TIMES U2', cuyo Code Point es 12288 (en Hexadecimal) ó 74376 (en Decimal).
-
-**Preguntas:**
-
-1. Codificarlo en UTF-8.
-
-> **Respuesta:** 
-> 12288H necesita 17 bits: 1 0010 0010 1000 1000
-> --> 4 code units: 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
-> 000 + 61*3 (no cabe en hasta 16 bits)
-> FC 92 8A 88
-
-2. Codificarlo en UTF-16.
-
-> **Respuesta:**
-> 74376-65536=8840=0010 0010 1000 1000
-> 110110xxxxxxxxxx 110111xxxxxxxxxx
-> D8 08 DE 88
-
----
-
-### Problema 3: MPD DASH
-
-**Enunciado:** Dado el siguiente fragmento de MPD DASH:
-
-```xml
-<MPD type="static" xmlns="urn:mpeg:dash:schema:mpd:2011"
-  profiles="urn:mpeg:dash:profile:isoff-live:2011"
-  minBufferTime="PT0.451S" mediaPresentationDuration="PT9M32.520S">
-```
-
-**Preguntas:**
-
-1. ¿Se puede usar este contenido para un servicio de "video on-demand"?
-
-> **Respuesta:** No, ya que el perfil es "isoff-live"; es decir, está destinado a contenido en vivo, no para on-demand.
-
-2. ¿Cuál es el formato de los ficheros usados?
-
-> **Respuesta:** ISO Base Media File Format.
-
-3. ¿Cuál es el tiempo reservado para los "buffers", si existe?
-
-> **Respuesta:** Al menos 0.451 segundos. Se especifica en el atributo minBufferTime.
-
----
-
-### Problema 4: WSDL
-
-**Enunciado:** Dada una especificación WSDL de un servicio de reservas de hotel.
-
-**Preguntas:**
-
-1. ¿De qué versión de WSDL se trata?
-
-> **Respuesta:** WSDL 2.0. Se puede ver en varios detalles: "description", "interface" y "endpoint" en vez de "definitions", "portType" y "port".
-
-2. ¿Qué información proporciona el elemento "binding"?
-
-> **Respuesta:** Es un binding a SOAP sobre HTTP, donde también la operación está especificada.
-
-3. ¿Qué cambiaría si quisiéramos usar REST en vez de SOAP?
-
-> **Respuesta:** Deberíamos especificar el binding a HTTP, y el método GET (el servicio no modifica el servidor).
-
----
-
-## 3. Exámenes Parciales
-
-### Examen Parcial 1 - 7 de Abril de 2025
-
-#### Preguntas Test (5 puntos)
-
-**Pregunta 1:** "USD" va entre comillas por tratarse del valor de un atributo.
+**Pregunta 18:** En el mecanismo ElGamal para encriptación asimétrica, la clave secreta es simplemente un número seleccionado dentro de un rango G dado.
+- [ ] Verdadero
+- [ ] Falso
 > **Respuesta:** Verdadero.
 
-**Pregunta 2:** "Name" es el "root element" del documento XML por ser el primero de los elementos en "PaymentInfo".
-> **Respuesta:** Falso. El elemento raíz es "PaymentInfo".
-
-**Pregunta 3:** La "HTTP Request Line" correspondiente a esta respuesta acaba con "HTTP/1.1".
-> **Respuesta:** Verdadero.
-
-**Pregunta 4:** El "status code" de la respuesta corresponde con el mensaje "Moved Permanently".
-> **Respuesta:** Falso. El código de estado es "200", que indica que el recurso ha sido enviado correctamente.
-
-**Pregunta 5:** Una de las ventajas de HTTP/2 es que añade nuevos métodos a los ya existentes en HTTP/1.1.
-> **Respuesta:** Falso. No añade nuevos métodos.
-
-**Pregunta 6:** El carácter Unicode cuyo "Code Point" es 100 (en Decimal) necesita 2 "Code Units" al codificarse en "UTF-16".
-> **Respuesta:** Falso. Necesita solo una code unit de 16 bits.
-
-**Pregunta 7:** Advanced Audio Coding (AAC) y Vorbis son ejemplos de estándares "open-source" que compiten con MP3.
-> **Respuesta:** Falso. AAC no es open-source y es una evolución de MP3.
-
-**Pregunta 8:** "JPSearch core metadata" es un estándar de ISO.
-> **Respuesta:** Verdadero.
-
-**Pregunta 9:** El formato de imágenes AVIF es el único caso en el que la representación de la imagen se basa en un mecanismo de compresión de vídeo.
-> **Respuesta:** Falso. Hay otros. Es una tendencia actual.
-
-**Pregunta 10:** Los formatos de gráficos vectoriales se basan en el uso de objetos geométricos para definir imágenes.
-> **Respuesta:** Verdadero.
-
----
-
-### Examen Parcial 2 - 27 de Mayo de 2025
-
-#### Preguntas Test (5 puntos)
-
-**Pregunta 1:** Podríamos obtener el valor Φ(n) que usa UserA para calcular su clave secreta d porque somos capaces de obtener los números primos p y q que se han usado para calcular n = p * q.
-> **Respuesta:** Verdadero. Φ(n)=(p-1)*(q-1)
-
-**Pregunta 2:** La clave secreta que necesitamos es d = 10.
-> **Respuesta:** Falso. Necesitamos la clave secreta de UserB. Para calcularla, necesitamos Φ(n) = (p-1)*(q-1), siendo p y q los factores de n (n=p*q). Como en este caso n es muy pequeño, podemos deducir fácilmente que n=22=2*11, así que Φ(n) = 1*10=10. Por tanto, la clave secreta de UserA es dA = eA-1 mod ΦA(n)= 3-1 mod 10 = 7.
-
-**Pregunta 3:** El resultado de la desencriptación de c es m=20.
-> **Respuesta:** Verdadero. Aplicamos la fórmula m = cd mod n. Por tanto, m = 147 mod 22 = 105413504 mod 22 = 20.
-
-**Pregunta 4:** En el mecanismo ElGamal para encriptación asimétrica, la clave secreta es simplemente un número seleccionado dentro de un rango G dado.
-> **Respuesta:** Verdadero.
-
-**Pregunta 5:** De acuerdo con X.509, la clave pública de una Autoridad de Certificación emitiendo un certificado se debe incluir en dicho certificado.
+**Pregunta 19:** De acuerdo con X.509, la clave pública de una Autoridad de Certificación emitiendo un certificado se debe incluir en dicho certificado.
+- [ ] Verdadero
+- [ ] Falso
 > **Respuesta:** Falso. La Clave Pública de la Autoridad de Certificación no se incluye, solo su firma.
 
----
-
-## 4. Exámenes Semanales
-
-### Examen Semanal - 12 de Febrero de 2026
-
-**Pregunta 1:** Reply-To e In-Reply-To son operaciones de un protocolo de transferencia de mensajes en Internet.
-> **Respuesta:** Falso. Son elementos (campos) de la cabecera de un mensaje.
-
-**Pregunta 2:** Una data unit de TCP (un segmento TCP) no incluye información del nivel de aplicación.
-> **Respuesta:** Falso. Incluye información de todos sus niveles superiores.
-
-**Pregunta 3:** MIME define, aparte de otras características, cómo combinar diferentes tipos de contenido en el mismo mensaje.
-> **Respuesta:** Verdadero. Aunque la característica más importante es la posibilidad de codificar contenido "multimedia" de forma legible y, por tanto, compatible con sistemas ASCII.
-
-**Pregunta 4:** Más de la mitad de los subtypes en MIME pertenecen a los content types audio, image y video.
-> **Respuesta:** Falso. La mayoría de los subtipos pertenecen al content type application.
-
-**Pregunta 5:** base64 es ineficiente porque necesita transmitir 1 octeto extra por cada octeto original.
-> **Respuesta:** Falso. El tamaño aumenta porque necesitamos 4 bytes por cada 3.
-
----
-
-### Examen Semanal - 24 de Febrero de 2026
-
-**Pregunta 1:** Tanto una URL como una URN se pueden usar para localizar un recurso que se quiere acceder con HTTP.
-> **Respuesta:** Falso. Solo una URL.
-
-**Pregunta 2:** En un HTTP header, un Entity Tag proporciona una marca de tiempo.
-> **Respuesta:** Falso. Un Entity Tag es un hash de un recurso identificado por una URL.
-
-**Pregunta 3:** El problema de HTTP/2 para las aplicaciones que lo quieren utilizar es su falta de compatibilidad ("backwards compatibility") con HTTP/1.1.
-> **Respuesta:** Falso. Son compatibles.
-
-**Pregunta 4:** Los tags de XML sólo pueden ser definidos por SDOs (Standards Development Organizations).
-> **Respuesta:** Falso. Cada diseñador de un esquema XML puede hacerlo.
-
-**Pregunta 5:** ISO es una SDO (Standards Development Organization), mientras que IEEE no lo es.
-> **Respuesta:** Falso. Ambas son SDOs.
-
----
-
-### Examen Semanal - 3 de Marzo de 2026
-
-**Pregunta 1:** El siguiente fragmento de documento XML incluye un elemento raíz, atributos y texto, pero no otros elementos.
-```xml
-<book>
-  <title lang="en">XML</title>
-  <author>John Smith</author>
-  <year>2018</year>
-</book>
-```
-> **Respuesta:** Falso. "title", "author" y "year" son elementos.
-
-**Pregunta 2:** JSON (JavaScript Object Notation) es un formato de intercambio de datos estandarizado por el W3C (World Wide Web Consortium).
-> **Respuesta:** Falso. Es un estándar IETF.
-
-**Pregunta 3:** Un proveedor de servicios web utiliza WSDL para permitir que otros puedan implementar clientes que remotamente accedan a ese servicio.
-> **Respuesta:** Verdadero.
-
-**Pregunta 4:** En REST, solo se pueden usar los métodos HTTP GET y POST.
-> **Respuesta:** Falso. También PUT o DELETE podrían usarse.
-
-**Pregunta 5:** Aunque usemos REST para implementar un servicio web, podríamos usar SOAP para devolver las respuestas.
-> **Respuesta:** Verdadero.
-
----
-
-### Examen Semanal - 10 de Marzo de 2026
-
-**Pregunta 1:** "Creation" y "Storage" son los primeros pasos del ciclo de vida de los contenidos multimedia.
-> **Respuesta:** Verdadero.
-
-**Pregunta 2:** Un "Code Unit" es un número único asignado a cada carácter Unicode.
-> **Respuesta:** Falso. Esto es un Code Point.
-
-**Pregunta 3:** Vorbis es un formato de audio open source.
-> **Respuesta:** Verdadero.
-
-**Pregunta 4:** SVG (Scalable Vector Graphics) es un formato de gráficos basado en XML que permite diversas resoluciones en las imágenes.
-> **Respuesta:** Falso. Es para gráficos vectoriales, los cuales no tienen resolución.
-
-**Pregunta 5:** HEIF (High Efficiency Image File Format) es un formato de imagen basado en un estándar de vídeo.
-> **Respuesta:** Verdadero. Es el Image File Format de HEVC (High Efficiency Video Coding), es decir MPEG-H parte 12.
 
 ---
 
@@ -1554,24 +1489,24 @@ Accept-Language: en-us
 
 | Categoría | Número de Preguntas |
 |-----------|---------------------|
-| Estandarización | 13 |
-| Ciclo de Vida | 1 |
-| Caracteres Unicode | 12 |
-| Audio | 3 |
-| Imágenes | 11 |
+| Estandarización | 14 |
+| Ciclo de Vida | 2 |
+| Caracteres Unicode | 14 |
+| Audio | 5 |
+| Imágenes | 15 |
 | Vídeo | 10 |
 | Contenedores | 14 |
-| Metadatos | 15 |
-| Modelo OSI | 5 |
-| MIME | 16 |
-| URL | 8 |
-| HTTP | 41 |
-| XML | 19 |
-| Servicios Web | 14 |
+| Metadatos | 16 |
+| Modelo OSI | 6 |
+| MIME | 20 |
+| URL | 9 |
+| HTTP | 46 |
+| XML | 24 |
+| Servicios Web | 17 |
 | HTML5 y Streaming | 18 |
 | DASH | 10 |
-| Seguridad | 17 |
-| **Total** | **227** |
+| Seguridad | 19 |
+| **Total** | **259** |
 
 ---
 
