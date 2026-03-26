@@ -94,11 +94,6 @@
 - [ ] Falso
 > **Respuesta:** Falso.
 
-**Pregunta 14:** ISO es una SDO (Standards Development Organization), mientras que IEEE no lo es.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. Ambas son SDOs.
-
 
 ---
 
