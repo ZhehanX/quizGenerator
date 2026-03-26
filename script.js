@@ -412,7 +412,7 @@ function handleOptionClick(selectedBtn, selectedIndex) {
   // Fade out other options
   allOptions.forEach((btn, index) => {
     btn.disabled = true;
-    if (index !== selectedIndex && index !== currentQuestion.correct) {
+    if (index !== currentQuestion.correct) {
       btn.classList.add("fade");
     }
     btn.style.boxShadow = "none";
