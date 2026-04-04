@@ -179,10 +179,6 @@
 - [ ] Falso
 > **Respuesta:** Falso. Necesita solo una code unit de 16 bits.
 
-**Pregunta 14:** Un "Code Unit" es un número único asignado a cada carácter Unicode.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. Esto es un Code Point.
 
 
 ---
