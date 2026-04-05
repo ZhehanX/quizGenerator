@@ -1113,27 +1113,6 @@ Accept-Language: en-us
 - [ ] Falso
 > **Respuesta:** Falso. El elemento raíz es "PaymentInfo".
 
-**Pregunta 22:** El siguiente fragmento de documento XML incluye un elemento raíz, atributos y texto, pero no otros elementos.
-```xml
-<book>
-  <title lang="en">XML</title>
-  <author>John Smith</author>
-  <year>2018</year>
-</book>
-```
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. "title", "author" y "year" son elementos.
-
-**Pregunta 23:** JSON (JavaScript Object Notation) es un formato de intercambio de datos estandarizado por el W3C (World Wide Web Consortium).
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. Es un estándar IETF.
-
-**Pregunta 24:** Los tags de XML sólo pueden ser definidos por SDOs (Standards Development Organizations).
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. Cada diseñador de un esquema XML puede hacerlo.
 
 
 ---
