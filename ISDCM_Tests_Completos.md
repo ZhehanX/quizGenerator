@@ -23,7 +23,6 @@
 14. [Servicios Web](#14-servicios-web)
 15. [HTML5 y Streaming](#15-html5-y-streaming)
 16. [DASH](#16-dash)
-17. [Seguridad](#17-seguridad)
 
 ---
 
@@ -1199,11 +1198,6 @@ Accept-Language: en-us
 - [ ] Falso
 > **Respuesta:** Falso. También PUT o DELETE podrían usarse.
 
-**Pregunta 17:** Aunque usemos REST para implementar un servicio web, podríamos usar SOAP para devolver las respuestas.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
 
 ---
 
@@ -1355,105 +1349,7 @@ Accept-Language: en-us
 
 ---
 
-### 17. Seguridad
 
-**Pregunta 1:** En el mecanismo ElGamal para encriptación asimétrica, la clave secreta es simplemente un número seleccionado dentro de un rango G dado.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 2:** De acuerdo con X.509, la clave pública de una Autoridad de Certificación emitiendo un certificado debe incluirse en dicho certificado.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. La Clave Pública de la Autoridad de Certificación no se incluye, solo su firma.
-
-**Pregunta 3:** CHACHA20 es el único mecanismo de "stream encryption" soportado en las TLSv1.3 cipher suites.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 4:** En TLSv1.3, la clave simétrica debe estar siempre encriptada con algoritmos Diffie-Hellman.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 5:** QUIC ("A UDP-Based Multiplexed and Secure Transport") integra el TLSv1.3 completo.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. QUIC proporciona un nivel de seguridad equivalente a TLSv1.3 e integra el proceso de handshake.
-
-**Pregunta 6:** S/MIME está estandarizado por el IETF. Especifica diferentes mensajes construidos sobre PKCS#7.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 7:** La encriptación de un documento con XML Encryption incluye un proceso de canonicalización.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. Es parte del proceso de firma con XML Signature.
-
-**Pregunta 8:** En XML Signature, tanto en el caso enveloped como en el enveloping, el elemento signature está siempre incluido en el documento XML firmado.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 9:** SAML especifica cómo definir JWTs y enviarlos en servicios web basados en REST.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. Se define con XML y permite definir aserciones de seguridad, que serían equivalentes a un JWT, pero no permite definirlas.
-
-**Pregunta 10:** El cuerpo de una "access token response" en OAuth 2.0 está siempre representado en XML.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. Puede ser también JSON o texto plano.
-
-**Pregunta 11:** En OAuth 2.0, la respuesta a una Authorization Request es un token que se usa para obtener después un Authorization Grant.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. La respuesta a una Authorization Request es un Authorization Grant, que consiste en una Credencial para obtener un access token.
-
-**Pregunta 12:** Un "Encrypted JWT" (JWE) contiene un "Protected header", una "Encrypted key" (simétrica), un "Initialization vector", los datos encriptados ("ciphertext") y un "Authentication tag". El vector y el tag son opcionales, mientras que el resto son obligatorios.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 13:** OpenID Connect especifica "Claims" para ser usados en JWTs.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 14:** En el contexto de control de acceso, el PDP (Policy Decision Point), solicitado por el PEP (Policy Enforcement Point), utiliza información del PAP (Policy Administration Point), que tiene las reglas de privacidad, y el PIP (Policy Information Point) para decidir conceder acceso o no.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 15:** El "Mandatory Access Control" está basado en el uso de "security labels" (niveles y categorías), mientras que el "Discretionary Access Control" utiliza listas de control de acceso.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 16:** XACML es un estándar que permite expresar reglas para control de acceso. Las reglas se pueden agrupar en políticas. El lenguaje permite especificar cómo combinar las reglas dentro de una política.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 17:** La exclusividad de los derechos morales se podría negociar.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. Los derechos morales no pueden transferirse, por lo que la "exclusividad" no aplica.
-
-**Pregunta 18:** En el mecanismo ElGamal para encriptación asimétrica, la clave secreta es simplemente un número seleccionado dentro de un rango G dado.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Verdadero.
-
-**Pregunta 19:** De acuerdo con X.509, la clave pública de una Autoridad de Certificación emitiendo un certificado se debe incluir en dicho certificado.
-- [ ] Verdadero
-- [ ] Falso
-> **Respuesta:** Falso. La Clave Pública de la Autoridad de Certificación no se incluye, solo su firma.
-
-
----
 
 ## Resumen de Categorías
 
@@ -1475,7 +1371,6 @@ Accept-Language: en-us
 | Servicios Web | 17 |
 | HTML5 y Streaming | 18 |
 | DASH | 10 |
-| Seguridad | 19 |
 | **Total** | **259** |
 
 ---
