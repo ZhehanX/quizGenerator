@@ -2,7 +2,7 @@
 // QUIZ FILE CONFIGURATION
 // All topics are parsed from this single Markdown file.
 // ============================================================
-const QUIZ_FILE = "./ISDCM_Tests_Completos.md";
+const QUIZ_FILE = "./isdcm_security_test_questions.md";
 
 // ============================================================
 // MARKDOWN PARSER
