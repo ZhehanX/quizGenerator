@@ -276,7 +276,8 @@ async function showTopicSelection() {
   try {
     // Fetch and parse only once, then cache
     if (!cachedTopics) {
-      const response = await fetch(QUIZ_FILE);
+      // Add a timestamp to the URL to prevent the browser from caching the Markdown file
+      const response = await fetch(`${QUIZ_FILE}?t=${new Date().getTime()}`);
       if (!response.ok) {
         throw new Error(
           `No se pudo cargar el archivo (${response.status} ${response.statusText})`
